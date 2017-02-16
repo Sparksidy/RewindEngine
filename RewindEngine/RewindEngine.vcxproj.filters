@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Engine\Layer.cpp" />
+    <ClCompile Include="Source\Engine\Scene.cpp" />
+    <ClCompile Include="Source\Engine\Component.cpp" />
+    <ClCompile Include="Source\Engine\GameObject.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Engine\Engine.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\BloomPostProcessor.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\CopyPostProcessor.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\DefaultFramebuffer.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\Framebuffer.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\GraphicSystem.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\PostProcessor.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\PostProcessorChain.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\Program.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\Renderer.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\Window.cpp" />
+    <ClCompile Include="Source\Utilities\GameClock.cpp" />
+    <ClCompile Include="Source\Systems\Input\Input.cpp" />
+    <ClCompile Include="Source\Systems\Input\KeyboardManager.cpp" />
+    <ClCompile Include="Source\Systems\Input\Mouse.cpp" />
+    <ClCompile Include="Source\precompiled.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\SpriteComponent.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\AnimatedSpriteComponent.cpp" />
+    <ClCompile Include="Source\Systems\Core\TransformComponent.cpp" />
+    <ClCompile Include="Source\Systems\Core\TransformComponent.cpp" />
+    <ClCompile Include="Source\Systems\Core\GameObjectManager.cpp" />
+    <ClCompile Include="Source\Systems\Core\ResourceManager.cpp" />
+    <ClCompile Include="Source\Systems\Physics\PhysicsSystem.cpp" />
+    <ClCompile Include="Source\Systems\Physics\RigidbodyComponent.cpp" />
+    <ClCompile Include="Source\Utilities\Math\LuaMathHelper.cpp" />
+    <ClCompile Include="Source\Systems\Core\LevelManager.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\PNGResourceLoader.cpp" />
+    <ClCompile Include="Source\Engine\Resource.cpp" />
+    <ClCompile Include="Source\Systems\Scripting\Components\LuaScriptComponent.cpp" />
+    <ClCompile Include="Source\Systems\Scripting\ScriptingManager\ScriptingManager.cpp" />
+    <ClCompile Include="Source\Systems\Scripting\ScriptLoader\ScriptLoader.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\AnimationController.cpp" />
+    <ClCompile Include="Source\Systems\Audio\AudioManager.cpp" />
+    <ClCompile Include="Source\Systems\Audio\Sound.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Engine\Component.h" />
+    <ClInclude Include="Source\Engine\Engine.h" />
+    <ClInclude Include="Source\Engine\GameObject.h" />
+    <ClInclude Include="Source\Engine\Layer.h" />
+    <ClInclude Include="Source\Engine\Resource.h" />
+    <ClInclude Include="Source\Engine\Scene.h" />
+    <ClInclude Include="Source\Systems\Core\ISystem.h" />
+    <ClInclude Include="Source\Systems\Graphics\BloomPostProcessor.h" />
+    <ClInclude Include="Source\Systems\Graphics\CopyPostProcessor.h" />
+    <ClInclude Include="Source\Systems\Graphics\DefaultFramebuffer.h" />
+    <ClInclude Include="Source\Systems\Graphics\Framebuffer.h" />
+    <ClInclude Include="Source\Systems\Graphics\GraphicSystem.h" />
+    <ClInclude Include="Source\Systems\Graphics\PostProcessor.h" />
+    <ClInclude Include="Source\Systems\Graphics\PostProcessorChain.h" />
+    <ClInclude Include="Source\Systems\Graphics\Program.h" />
+    <ClInclude Include="Source\Systems\Graphics\Renderer.h" />
+    <ClInclude Include="Source\Systems\Graphics\Window.h" />
+    <ClInclude Include="Source\Systems\Input\Input.h" />
+    <ClInclude Include="Source\Systems\Input\KeyboardManager.h" />
+    <ClInclude Include="Source\Systems\Input\Mouse.h" />
+    <ClInclude Include="Source\precompiled.h" />
+    <ClInclude Include="Source\Utilities\GameClock.h" />
+    <ClInclude Include="Source\Utilities\math\mat3.h" />
+    <ClInclude Include="Source\Utilities\math\vec2.h" />
+    <ClInclude Include="Source\Utilities\math\vec3.h" />
+    <ClInclude Include="Source\Systems\Graphics\SpriteComponent.h" />
+    <ClInclude Include="Source\Systems\Graphics\AnimatedSpriteComponent.h" />
+    <ClInclude Include="Source\Systems\Core\TransformComponent.h" />
+    <ClInclude Include="Source\Utilities\math\mat4.h" />
+    <ClInclude Include="Source\Systems\Core\TransformComponent.h" />
+    <ClInclude Include="Source\Systems\Core\GameObjectManager.h" />
+    <ClInclude Include="Source\Systems\Core\ResourceManager.h" />
+    <ClInclude Include="Source\Systems\Core\ResourceLoader.h" />
+    <ClInclude Include="Source\Systems\Physics\PhysicsSystem.h" />
+    <ClInclude Include="Source\Systems\Physics\RigidbodyComponent.h" />
+    <ClInclude Include="Source\Utilities\Math\LuaMathHelper.h" />
+    <ClInclude Include="Source\Systems\Core\LevelManager.h" />
+    <ClInclude Include="Source\Systems\Graphics\PNGResourceLoader.h" />
+    <ClInclude Include="Source\Systems\Scripting\Components\LuaScriptComponent.h" />
+    <ClInclude Include="Source\Systems\Scripting\ScriptingManager\ScriptingManager.h" />
+    <ClInclude Include="Source\Systems\Scripting\ScriptLoader\ScriptLoader.h" />
+    <ClInclude Include="Source\Systems\Graphics\AnimationController.h" />
+    <ClInclude Include="Source\Systems\Audio\AudioManager.h" />
+    <ClInclude Include="Source\Systems\Audio\Sound.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lua_Scripts\Rewind.lua" />
+<<<<<<< HEAD
+    <None Include="x64\Debug\ikpFlac.dll" />
+    <None Include="x64\Debug\ikpMP3.dll" />
+    <None Include="x64\Debug\irrKlang.dll" />
+=======
+    <None Include="Resources\Levels\DemoLevel.json" />
+>>>>>>> 42f6771a920c8094ef9033e64792d46b09310a15
+  </ItemGroup>
+</Project>

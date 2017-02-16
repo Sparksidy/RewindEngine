@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3328FC15-797B-46B9-8786-7BEC75BCF4A9}</ProjectGuid>
+    <RootNamespace>RewindEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;$(SolutionDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;$(SolutionDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lua\lua52.lib;libpng16.lib;glew32.lib;opengl32.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;$(SolutionDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;$(SolutionDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Lua\lua52.lib;libpng16.lib;glew32.lib;opengl32.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Systems\Audio\AudioManager.h" />
+    <ClInclude Include="Source\Systems\Audio\Sound.h" />
+    <ClInclude Include="Source\Systems\Graphics\AnimationController.h" />
+    <ClInclude Include="Source\Systems\Physics\RigidbodyComponent.h" />
+    <ClInclude Include="Source\Systems\Graphics\PNGResourceLoader.h" />
+    <ClInclude Include="Source\Systems\Core\LevelManager.h" />
+    <ClInclude Include="Source\Systems\Graphics\AnimatedSpriteComponent.h" />
+    <ClInclude Include="Source\Engine\Component.h" />
+    <ClInclude Include="Source\Engine\Engine.h" />
+    <ClInclude Include="Source\Engine\GameObject.h" />
+    <ClInclude Include="Source\Systems\Core\GameObjectManager.h" />
+    <ClInclude Include="Source\Engine\Layer.h" />
+    <ClInclude Include="Source\Engine\Resource.h" />
+    <ClInclude Include="Source\Systems\Core\ResourceLoader.h" />
+    <ClInclude Include="Source\Systems\Core\ResourceManager.h" />
+    <ClInclude Include="Source\Engine\Scene.h" />
+    <ClInclude Include="Source\Systems\Core\ISystem.h" />
+    <ClInclude Include="Source\Systems\Graphics\BloomPostProcessor.h" />
+    <ClInclude Include="Source\Systems\Graphics\CopyPostProcessor.h" />
+    <ClInclude Include="Source\Systems\Graphics\DefaultFramebuffer.h" />
+    <ClInclude Include="Source\Systems\Graphics\Framebuffer.h" />
+    <ClInclude Include="Source\Systems\Graphics\GraphicSystem.h" />
+    <ClInclude Include="Source\Systems\Graphics\PostProcessor.h" />
+    <ClInclude Include="Source\Systems\Graphics\PostProcessorChain.h" />
+    <ClInclude Include="Source\Systems\Graphics\Program.h" />
+    <ClInclude Include="Source\Systems\Graphics\Renderer.h" />
+    <ClInclude Include="Source\Systems\Graphics\Window.h" />
+    <ClInclude Include="Source\Systems\Input\Input.h" />
+    <ClInclude Include="Source\Systems\Input\KeyboardManager.h" />
+    <ClInclude Include="Source\Systems\Input\Mouse.h" />
+    <ClInclude Include="Source\Systems\Physics\PhysicsSystem.h" />
+    <ClInclude Include="Source\Systems\Scripting\Components\LuaScriptComponent.h" />
+    <ClInclude Include="Source\Systems\Scripting\ScriptingManager\ScriptingManager.h" />
+    <ClInclude Include="Source\Systems\Scripting\ScriptLoader\ScriptLoader.h" />
+    <ClInclude Include="Source\Utilities\GameClock.h" />
+    <ClInclude Include="Source\Utilities\Math\LuaMathHelper.h" />
+    <ClInclude Include="Source\Utilities\math\mat3.h" />
+    <ClInclude Include="Source\Utilities\math\mat4.h" />
+    <ClInclude Include="Source\Utilities\math\vec2.h" />
+    <ClInclude Include="Source\Utilities\math\vec3.h" />
+    <ClInclude Include="Source\precompiled.h" />
+    <ClInclude Include="Source\Systems\Graphics\SpriteComponent.h" />
+    <ClInclude Include="Source\Systems\Core\TransformComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Systems\Audio\AudioManager.cpp" />
+    <ClCompile Include="Source\Systems\Audio\Sound.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\AnimationController.cpp" />
+    <ClCompile Include="Source\Systems\Physics\RigidbodyComponent.cpp" />
+    <ClCompile Include="Source\Engine\Resource.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\PNGResourceLoader.cpp" />
+    <ClCompile Include="Source\Systems\Core\LevelManager.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\AnimatedSpriteComponent.cpp" />
+    <ClCompile Include="Source\Engine\Layer.cpp" />
+    <ClCompile Include="Source\Systems\Core\ResourceManager.cpp" />
+    <ClCompile Include="Source\Engine\Scene.cpp" />
+    <ClCompile Include="Source\Engine\Component.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\GameObject.cpp" />
+    <ClCompile Include="Source\Systems\Core\GameObjectManager.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Engine\Engine.cpp" />
+    <ClCompile Include="Source\Systems\Input\Input.cpp" />
+    <ClCompile Include="Source\Systems\Input\KeyboardManager.cpp" />
+    <ClCompile Include="Source\Systems\Input\Mouse.cpp" />
+    <ClCompile Include="Source\Systems\Physics\PhysicsSystem.cpp" />
+    <ClCompile Include="Source\Systems\Scripting\Components\LuaScriptComponent.cpp" />
+    <ClCompile Include="Source\Systems\Scripting\ScriptingManager\ScriptingManager.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\BloomPostProcessor.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\CopyPostProcessor.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\DefaultFramebuffer.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\Framebuffer.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\GraphicSystem.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\PostProcessor.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\PostProcessorChain.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\Program.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\Renderer.cpp" />
+    <ClCompile Include="Source\Systems\Graphics\Window.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Systems\Scripting\ScriptLoader\ScriptLoader.cpp" />
+    <ClCompile Include="Source\Utilities\GameClock.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\precompiled.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Systems\Graphics\SpriteComponent.cpp" />
+    <ClCompile Include="Source\Systems\Core\TransformComponent.cpp" />
+    <ClCompile Include="Source\Utilities\Math\LuaMathHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Levels\DemoLevel.json" />
+    <None Include="Resources\Lua_Scripts\Rewind.lua" />
+    <None Include="x64\Debug\ikpFlac.dll" />
+    <None Include="x64\Debug\ikpMP3.dll" />
+    <None Include="x64\Debug\irrKlang.dll" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

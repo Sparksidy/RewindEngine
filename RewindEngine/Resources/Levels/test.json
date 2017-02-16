@@ -1,0 +1,137 @@
+{
+  "Resources": [ "Resources/Textures/background.png", "Resources/Textures/explosion.png", "Resources/Textures/runningcat.png",
+    "Resources/Textures/character.png",
+    "Resources/Textures/platform.png",
+    "Resources/Textures/HumanCharacter.png",
+    "Resources/Textures/wall.png"
+  ],
+	"Objects":
+	[
+		{
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ 0, 0 ],
+          "Rotation": 0,
+          "Scale": [ 800, 600 ]
+        },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/background.png"
+        }
+      }
+		},
+		{
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ 200, 0 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "AnimatedSprite": {
+          "SpriteSheet": "Resources/Textures/explosion.png",
+          "Type": "Row",
+          "FramesPerElement": 5,
+          "Frames": 23,
+          "Duration": 1.5
+        }
+      }
+		},
+    {
+      "Components": 
+      {
+        "Transform": {
+          "Translation": [ -200, 0 ],
+          "Rotation": 0,
+          "Scale": [ 200, 100 ]
+        },
+        "AnimatedSprite": {
+          "SpriteSheet": "Resources/Textures/runningcat.png",
+          "Type": "Column",
+          "FramesPerElement": 4,
+          "Frames": 8,
+          "Duration": 2.5
+        },
+        "LuaScript": 
+        {
+          "FileName": "TestScript1.lua"
+        }
+      }
+    },
+
+    
+
+    {
+      "Components": 
+      {
+        "Transform":
+         {
+          "Translation": [ 0, -95 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+         },
+        "Sprite": {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+    {
+      "Components": 
+      {
+        "Transform":
+         {
+          "Translation": [ -100, -95 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+         },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/platform.png"
+        }
+      }
+    },
+    {
+      "Components": {
+        "Transform": {
+          "Translation": [ -200, -95 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": {
+          "Texture": "Resources/Textures/platform.png"
+        }
+      }
+    },
+    {
+
+			"Components": {
+				"Transform": {
+					"Translation": [ -200, -95 ],
+					"Rotation": 0,
+					"Scale": [ 100, 100 ]
+				},
+        "Sprite": {
+          "Texture": "Resources/Textures/explosion.png"
+        },
+        
+				"Rigidbody":{
+          "Acceleration":0,
+          "Mass": 1,
+          "RotVelocity": 0,
+          "Velocity": [0, 0],
+          "Gravity": false
+				}
+			}
+		}
+		
+	]
+}

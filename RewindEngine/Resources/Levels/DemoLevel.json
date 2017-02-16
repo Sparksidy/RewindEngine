@@ -1,0 +1,254 @@
+{
+  "Resources": [ "Resources/Textures/background.png", "Resources/Textures/explosion.png", "Resources/Textures/runningcat.png",
+    "Resources/Textures/character.png",
+    "Resources/Textures/platform.png",
+    "Resources/Textures/HumanCharacter.png",
+    "Resources/Textures/starsBackground.png",
+    "Resources/Textures/wall.png"
+  ],
+	"Objects":
+	[
+    {
+      "Components": {
+        "Transform": {
+          "Translation": [ 0, 0 ],
+          "Rotation": 0,
+          "Scale": [ 800, 600 ]
+        },
+        "Sprite": {
+          "Texture": "Resources/Textures/starsBackground.png"
+        }
+      }
+    },
+
+    {
+      "Components":
+       {
+        "Transform": 
+        {
+          "Translation": [ 0, 0 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "AnimatedSprite": 
+        {
+          "SpriteSheet": "Resources/Textures/character.png",
+          "Type": "Column",
+          "FramesPerElement": 1,
+          "Frames": 8,
+          "Duration": 1
+        },
+        "Rigidbody": {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "ColliderSize":  [1, 1]
+        },
+        "LuaScript": 
+        {
+          "FileName": "TestScript1.lua"
+        }
+      }
+    },
+
+    
+    
+
+    {
+      "Components": {
+        "Transform": {
+          "Translation": [ 400, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+
+    {
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ 300, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": 
+        {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+    {
+      "Components": {
+        "Transform": {
+          "Translation": [ 200, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+    {
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ 100, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": 
+        {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+    {
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ 0, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": 
+        {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+
+    {
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ -100, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+
+    {
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ -200, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": 
+        {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+
+    {
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ -300, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": 
+        {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    },
+
+    {
+      "Components": 
+      {
+        "Transform": 
+        {
+          "Translation": [ -400, -250 ],
+          "Rotation": 0,
+          "Scale": [ 100, 100 ]
+        },
+        "Sprite": 
+        {
+          "Texture": "Resources/Textures/platform.png"
+        },
+        "Rigidbody": 
+        {
+          "Acceleration": 0,
+          "Mass": 10,
+          "RotVelocity": 0,
+          "Gravity": false
+        }
+      }
+    }
+		
+		
+	]
+}
